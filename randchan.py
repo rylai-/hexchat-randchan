@@ -8,10 +8,7 @@ __module_description__ = "randchan cmd"
 __author__ = "Rylee Elise Fowler"
 
 def randchan (length=10):
-    try:
-        HC.command('join' + ''.join(random.sample(string.lowercase, 10))
-    except:
-        print('error: this failed somehow')
+    HC.command('join' + ''.join(random.sample(string.lowercase, 10))
 
 HC.hook_command("randchan", randchan)
 HC.prnt(__module_name__ + ' version ' + __module_version__ + ' loaded.')
